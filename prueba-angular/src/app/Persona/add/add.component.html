@@ -1,0 +1,40 @@
+<div class="container col-md-6" >
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Personas</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">PrimerNombre:</label>
+                    <input [(ngModel)]= "persona.primerNombre" name ="primerNombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">SegundoNombre:</label>
+                    <input [(ngModel)]= "persona.segundoNombre" name ="segundoNombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">PrimerApellido:</label>
+                    <input  [(ngModel)]= "persona.primerApellido" name ="primerApellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">SegundoApellido:</label>
+                    <input [(ngModel)]= "persona.segundoApellido" name ="segundoApellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">TipoIdentificacion:</label>
+                    <input [(ngModel)]= "persona.tipoIdentificacion" name ="tipoIdentificacion" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">NumeroIdentificacion:</label>
+                    <input [(ngModel)]= "persona.numeroIdentificacion" name ="numeroIdentificacion" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">FechaNacimiento:</label>
+                    <input [(ngModel)]= "persona.fechaNacimiento" name ="fechaNacimiento" type="date" class="form-control">
+                </div>
+                <button (click) = "Guardar(persona)"  class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
